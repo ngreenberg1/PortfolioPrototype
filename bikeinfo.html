@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Image Map</title>
+    <link rel="stylesheet" href="bikeinfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta name="author" content="Naomi Greenberg and Ricardo Cordova" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Personal Portfolio">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bikeinfo.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="header-container">
+          <div class="logo">
+            <h1><a href="Home.html">Naomi E. Greenberg</a></h1>
+            <h2>COMPUTER SCIENCE STUDENT - BIKE ENTHUSIAST</h2>
+          </div>
+          <nav class="topnav" id="myTopnav">
+              <a href="Home.html#about" onclick="closeMenu()">About Me</a>
+              <a href="Home.html#resume" onclick="closeMenu()">Resume</a>
+              <div class="dropdown">
+                <button class="dropbtn">Projects
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="bikeinfo.html">Bicycle Image Map</a>
+                  <a href="#">Bicycle Recommender</a>
+                  <a href="#">Machine Learning Research</a>
+                </div>
+              </div>
+              <div class="social-media-icons">
+                <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="icon-link"><i class="far fa-envelope"></i></a>
+              </div>  
+              <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">&#9776;</a>    
+          </nav>
+        </div>
+      </header>
+        <div id="image_container">
+            <h1>Bike Image map</h1>
+                <!-- Image Map -->
+                <img id="image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" usemap="#image-map">
+                <figcaption>Mouse over the image to learn more about bike components</figcaption>
+                <map name="image-map">
+                    <area target="_blank" alt="down-tube" coords="3115,1050,3191,1127,2537,1907,2465,1861" shape="poly">
+                    <area target="_blank" alt="front-fork" coords="3255,1163,3354,1113,3678,1879,3593,1843" shape="poly">
+                    <area target="_blank" alt="head-tube" coords="3142,798,3237,771,3318,1037,3223,1077" shape="poly">
+                    <area target="_blank" alt="seat-tube" coords="1961,1122,2015,1082,2195,1663,2132,1690" shape="poly">
+                    <area target="_blank" alt="front-derailleur" coords="2132,1717,2177,1753,2200,1816,2240,1830,2222,1866,2078,1970,2060,1947,2173,1825" shape="poly">
+                    <area target="_blank" alt="disc-brake-rotor" coords="3671,1933,170" shape="circle">
+                    <area target="_blank" alt="top-tube" coords="2033,947,2042,1010,3092,874,3079,793" shape="poly">
+                    <area target="_blank" alt="bottom-bracket" coords="2276,2090,45" shape="circle">
+                    <area target="_blank" alt="crank-arm" coords="2349,2051,2619,2028,2619,2100,2358,2123" shape="poly">
+                    <area target="_blank" alt="rear-derailleur" coords="1267,1979,1235,2060,1375,2154,1411,2177,1406,2339,1470,2348,1488,2294,1447,2213,1425,2096,1361,2046,1307,2019" shape="poly">
+                    <area target="_blank" alt="rear-thru-axle" coords="1321,1925,32" shape="circle">
+                    <area target="_blank" alt="cassette-sprockets" coords="1347,1925,146" shape="circle">
+                    <area target="_blank" alt="clipless-pedal" coords="2619,1961,2673,2028,2700,2046,2696,2082,2714,2127,2660,2141,2673,2109,2646,2073,2601,1974" shape="poly">
+                    <area target="_blank" alt="handlebars" coords="3300,800,3313,859,3440,841,3557,750,3602,660,3611,570,3534,525,3467,462,3354,489,3322,543,3354,597,3404,588,3440,548,3503,534,3530,570,3539,615,3498,705,3408,768" shape="poly">
+                    <area target="_blank" alt="hood" coords="3485,471,3606,575,3683,489,3697,444,3760,349,3719,313,3665,304,3647,412" shape="poly">
+                    <area target="_blank" alt="stem" coords="3079,593,3147,570,3304,548,3327,620,3187,651,3101,674" shape="poly">
+                    <area target="_blank" alt="seat-post" coords="1794,586,1871,572,1943,847,1889,870" shape="poly">
+                    <area target="_blank" alt="seat-post-clamp" coords="1851,892,1951,854,1960,885,1860,915" shape="poly">
+                    <area target="_blank" alt="seat-stay" coords="1419,1776,1939,1035,1952,1058,1441,1794" shape="poly">
+                    <area target="_blank" alt="chain" coords="1511,2332,2178,2323,2177,2341,1529,2346" shape="poly">
+                    <area target="_blank" alt="chain-rings" coords="2266,2089,216" shape="circle">
+                    <area target="_blank" alt="water-bottle-cage" coords="2556,1476,2403,1647,2538,1733,2651,1598,2741,1476,2633,1526" shape="poly">
+                    <area target="_blank" alt="rear-rim" coords="1695,1293,1641,1374,1488,1324,1325,1306,1159,1333,1019,1410,893,1518,807,1653,762,1788,744,1928,771,2095,829,2244,933,2370,1064,2469,1213,2528,1375,2541,1533,2514,1681,2455,1790,2370,1844,2437,1718,2537,1564,2609,1388,2636,1258,2627,1113,2600,987,2537,897,2469,798,2365,712,2239,667,2108,645,1991,645,1860,663,1761,703,1622,771,1495,861,1387,960,1311,1082,1248,1222,1202,1357,1193,1519,1207" shape="poly">
+                    <area target="_blank" alt="front-rim" coords="3268,1321,3142,1429,3052,1541,3002,1654,2957,1785,2944,1907,2944,2024,2966,2118,3011,2245,3056,2330,3129,2425,3214,2501,3291,2556,3394,2610,3494,2646,3593,2655,3706,2659,3836,2646,3972,2601,4084,2529,4174,2456,4242,2384,4310,2281,4350,2195,4382,2060,4395,1929,4382,1803,4341,1672,4283,1559,4206,1456,4098,1352,3976,1285,3859,1244,3719,1212,3597,1217,3471,1244,3507,1325,3638,1307,3737,1316,3841,1334,3944,1370,4030,1429,4116,1496,4188,1596,4251,1699,4283,1798,4296,1893,4292,1992,4274,2123,4233,2218,4174,2317,4084,2411,3981,2479,3859,2538,3733,2556,3579,2547,3453,2520,3336,2474,3255,2411,3156,2299,3092,2181,3047,2051,3038,1911,3056,1780,3110,1645,3187,1541,3277,1456,3318,1415" shape="poly">
+                    <area target="_blank" alt="front-tire" coords="3422,1181,3539,1149,3674,1140,3796,1145,3913,1172,4017,1212,4125,1276,4201,1334,4296,1438,4346,1528,4382,1605,4431,1713,4458,1898,4454,2042,4431,2177,4386,2267,4346,2362,4265,2465,4188,2542,4084,2614,3967,2677,3832,2718,3728,2736,3575,2727,3431,2700,3300,2646,3192,2569,3110,2501,3029,2407,2971,2308,2917,2186,2885,2069,2876,1916,2890,1776,2921,1668,3002,1505,3092,1397,3178,1312,3255,1267,3282,1312,3187,1379,3115,1438,3052,1528,3011,1605,2971,1699,2948,1798,2939,1875,2939,1970,2957,2096,3002,2227,3043,2299,3092,2375,3169,2452,3246,2515,3331,2578,3417,2614,3530,2650,3629,2655,3710,2659,3877,2637,4008,2587,4134,2497,4233,2398,4319,2272,4373,2118,4400,1952,4386,1807,4350,1690,4287,1550,4206,1438,4084,1339,3967,1271,3841,1221,3683,1199,3543,1217,3462,1235" shape="poly">
+                    <area target="_blank" alt="rear-tire" coords="1731,1239,1605,1172,1438,1145,1294,1140,1168,1158,1050,1203,933,1267,843,1334,766,1420,694,1519,649,1605,609,1722,586,1848,586,1983,591,2082,618,2181,654,2258,703,2348,762,2425,834,2501,902,2560,992,2614,1086,2664,1204,2704,1312,2704,1425,2709,1515,2704,1600,2668,1699,2637,1808,2565,1884,2501,1970,2402,1916,2371,1839,2447,1718,2542,1605,2592,1470,2628,1325,2641,1213,2623,1095,2592,978,2529,866,2429,766,2326,703,2213,658,2060,645,1898,672,1735,703,1632,775,1483,866,1393,983,1298,1109,1239,1226,1212,1343,1203,1474,1208,1609,1248,1704,1298" shape="poly">
+                    <area target="_blank" alt="brake/shift-lever" coords="3764,376,3715,439,3719,512,3724,570,3697,615,3724,669,3787,719,3764,660,3751,584,3760,480,3742,435,3778,412" shape="poly">
+                    <area target="_blank" alt="brake/shift-lever2" coords="3697,500,3633,599,3669,640,3678,699,3660,748,3688,807,3742,838,3719,789,3719,757,3715,667,3706,545" shape="poly">
+                    <area target="_blank" alt="chain-stay" coords="1397,1925,1366,1943,1898,2150,2042,2186,2038,2132,1916,2114" shape="poly">
+                    <area target="_blank" alt="cables" coords="3295,924,3363,892,3390,852,3385,879,3336,919,3408,888,3462,861,3525,784,3507,829,3444,888,3462,906,3462,969,3435,1100,3404,1158,3431,1037,3453,928,3431,861" shape="poly">
+                    <area target="_blank" alt="saddle" coords="1515,442,1718,464,1925,455,2101,446,2096,487,1839,509,1722,568,1609,541,1492,469" shape="poly">
+                    <area target="_blank" alt="rear-spokes" coords="1501,1343,1199,1375,960,1564,811,1794,798,1952,888,2200,965,2344,1091,2429,1361,2492,1330,2209,1100,2051,1122,1825,1321,1695,1420,1704" shape="poly">
+                    <area target="_blank" alt="front-spokes" coords="3553,1352,3850,1352,4107,1550,4215,1816,4224,2109,4058,2362,3791,2501,3498,2492,3250,2348,3106,2091,3101,1753,3286,1501,3458,1704,3422,1879,3422,1988,3485,2114,3674,2177,3931,2028,3863,1722,3665,1654" shape="poly">
+                    <area target="_blank" alt="brake-caliper" coords="3485,1771,3503,1803,3543,1816,3539,1879,3503,1916,3458,1920,3449,1879,3458,1825" shape="poly">
+                    <area target="_blank" alt="quick-release" coords="3561,1861,3602,1866,3669,1902,3638,1920,3584,1884" shape="poly">
+                    <area target="_blank" alt="front-thru-axle" coords="3678,1934,29" shape="circle">
+                    <area target="_blank" alt="head-set" coords="3133,753,3210,726,3237,766,3133,798" shape="poly">
+                  <!-- Add more items as needed -->
+                </map>
+                <script>imageMapResize();</script> 
+
+                <div id="down-tubemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>downtube</b> is a part of the bicycle frame.  It connects the head tube to the bottom bracket shell. </p>
+                    <img id="down-tube-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/downtube.jpg"> 
+                  </div>
+                </div>
+                <div id="front-forkmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>bicycle</b> fork is the part of a bicycle that holds the front wheel. A steerer tube attaches the fork to the bicycle and the handlebars (via the stem) allowing the rider to 
+                    steer the bicycle.</p>
+                    <img id="front-fork-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/frontfork.png"> 
+                  </div>
+                </div>
+                <div id="head-tubemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>head tube</b> is a part of the frame, and contain the headset.  The headset contains bearing for the fork via its steerer tube.</p>
+                    <img id="head-tube-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/headtube.jpg"> 
+                  </div>
+                </div>
+                <div id="seat-tubemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>seat tube</b> contains the seatpost of the bike, which connects to the saddle.  The saddle height is adjustable by changing how far the seatpost is inserted into the seat tube.</p>
+                    <img id="seat-tube-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/seattube.jpg">
+                  </div>
+                </div>
+                <div id="front-derailleurmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>front derailleur</b> moves the chain side to side between the front chainrings. It clamps to the seattube, and has a cage through which the chain passes. When the rider shifts with the fron shifter, the cage moves the chain up or down.</p>
+                    <img id="front-derailleur-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/frontderailleur.jpg">
+                  </div>
+                </div>
+                <div id="disc-brake-rotormodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>rotor</b> is a metal disc attached to the wheel hub that rotates with the wheel. The caliper squeezes the rotor to cause braking.</p>
+                    <img id="disc-brake-rotor-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/discbrakerotor.jpeg">
+                  </div>
+                </div>
+                <div id="top-tubemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>top tube</b>, or cross-bar, is part of the frame, and connects the top of the head tube to the top of the seat tube. </p>
+                    <img id="top-tube-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/toptube.jpg"> 
+                  </div>
+                </div>
+                <div id="bottom-bracketmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>bottom bracket</b> connects the crankarms to the bicycle and allows them to rotate freely. It contains a spindle to which the crankset attaches, 
+                    and the bearings that allow the spindle and crankset to rotate.</p>
+                    <img id="bottom-bracket-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/bottombracket.jpg"> 
+                  </div>
+                </div>
+                <div id="crank-armmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>crank arm</b> is part of the crankset, which is the component of a bicycle drivetrain that converts the reciprocating
+                    motion of the rider's legs into rotational motion used to drive the chain or belt, which in turn drive the rear wheel.</p>
+                    <img id="crank-arm-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/crankarm.jpeg"> 
+
+                  </div>
+                </div>
+                <div id="rear-derailleur" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>rear derailleur</b> moves the chain between the cassette sprockets, and takes up chain slack caused by moving to a smaller sprocket at the rear or a smallerchainring by the front derailleur.  
+                    Most rear dearailleurs consist of a a cage that holds two pulleys that guide the chain in an S-shaped pattern. </p>
+                    <img id="rear-derailleur-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/rearderailleur.jpg"> 
+
+                  </div>
+                </div>
+                <div id="rear-thru-axlemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>thru axle</b> is a removable axle with a threaded end that is inserted through a hole in one fork leg, through the hub, and then screwed into the other fork leg.</p>
+                    <img id="thru-axle-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/thruaxle.jpeg"> 
+                  </div>
+                </div>
+                <div id="cassette-sprocketsmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>cassette</b> is the set of multiple sprockets that attaches to the hub on the rear wheel. The cassette works with the rear derailleur to provide multiple gear ratios to the rider.</p>
+                    <img id="cassette-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/cassette.jpg"> 
+                  </div>
+                </div>
+                <div id="clipless-pedalmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>pedal</b> is the part of a bicycle that the rider pushes with their foot to propel the vehicle.  It provides the connection between the rider's foot or shoe and the crank allowing the leg to turn the bottom bracket spindle
+                    and propel the bicycle's wheels. <b>Clipless pedals</b> require a special cycling shoe with a cleat fitted to the sole, which locks into a mechanism in the pedal and thus holds the shoe firmly to the pedal.</p>
+                    <img id="clipless-pedal-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/cliplesspedals.jpg"> 
+                  </div>
+                </div>
+                <div id="handlebarsmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>handlebars</b> are the steering control for the bicycle.  It is most often directly mechanically linked to a pivoting front wheel via a stem, which in turn attaches it to the fork.</p>
+                    <img id="handlebars-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/handlebars.jpg"> 
+                  </div>
+                </div>
+                <div id="hoodmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>hoods</b> act as a handrest when the rider has their hands on the brake levers.</p>
+                    <img id="hood-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/hood.jpeg"> 
+                  </div>
+                </div>
+                <div id="stemmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>stem</b> is the component on a bicycle that connects the handlebars to the steerer tube of the bicycle fork.</p>
+                    <img id="stem-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/stem.jpeg"> 
+                  </div>
+                </div>
+                <div id="seat-postmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>seatpost</b> is the tube that extends upward from the bicycle frame to the saddle. It is attached to the frame by inserting into the seat tube, and is held in place by the seat post clamp. The seatpost clamps to the saddle via the saddle rails.</p>
+                    <img id="seat-post-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/seatpost.png"> 
+                  </div>
+                </div>
+                <div id="seat-post-clampmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>seatpost clamp</b> clamps down on the seat tube, and holds the seat post in place</p>
+                    <img id="seat-post-clamp-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/seatpostclamp.jpeg"> 
+                  </div>
+                </div>
+                <div id="seat-staymodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>seat stays</b> are part of the frame, and connect the top of the seat tube to the rear fork dropouts.</p>
+                    <img id="seat-stays-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/seatstays.jpg"> 
+
+                  </div>
+                </div>
+                <div id="chainmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>chain</b> is a roller chain that transfers power from the deals to the drive-wheel of a bicycle, thus propelling it.</p>
+                    <img id="chain-imgage" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/chain.gif"> 
+                  </div>
+                </div>
+                <div id="chain-ringsmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>chainrings</b> engage the chain to transfer power to the rear wheel. A bicycle can have between one and three chaing rings which in combination with the cassette, allow for different gear ratios.</p>
+                    <img id="chain-rings-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/chainring.jpg"> 
+                  </div>
+                </div>
+                <div id="water-bottle-cagemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>water bottle cages</b> attach to the bicycle frame via bolts which thread into eyelets, typically placed on the downtube and seattube. </p>
+                    <img id="waterbottle-cage-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/waterbottlecage.jpeg"> 
+
+                  </div>
+                </div>
+                <div id="rear-rimmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>rim</b> is the part of the wheel to which the tire attaches. The rim is attached to the hub, at the center of the wheel, with spokes.</p>
+                    <img id="rim-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/rim.jpg"> 
+                  </div>
+                </div>
+                <div id="front-rimmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>rim</b> is the part of the wheel to which the tire attaches. The rim is attached to the hub, at the center of the wheel, with spokes.</p>
+                    <img id="rim-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/rim.jpg"> 
+                  </div>
+                </div>
+                <div id="front-tiremodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>bicycle tire</b> provides an important source of suspension, generates the lateral forces necesarry for balancing and turning, and generates the longitudinal forces necessary for propulsion and braking. Bicycle tires are typically pneumatic, 
+                      with pressurized air being held inside with a seperate inner tube, or by the tire and the rim, in a tubeless system. Tire surfaces can vary, the appropriate tire is usually dependent on the surface one is riding on.</p>
+                      <img id="tire-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/tire.jpeg"> 
+                  </div>
+                </div>
+                <div id="rear-tiremodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>bicycle tire</b> provides an important source of suspension, generates the lateral forces necesarry for balancing and turning, and generates the longitudinal forces necessary for propulsion and braking. Bicycle tires are typically pneumatic, 
+                    with pressurized air being held inside with a seperate inner tube, or by the tire and the rim, in a tubeless system. Tire surfaces can vary, the appropriate tire is usually dependent on the surface one is riding on.</p>
+                    <img id="tire-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/tire.jpeg"> 
+                  </div>
+                </div>
+                <div id="brake/shift-levermodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>brake and shift levers</b> transmit the force applied by the rider through a mechanical or hydraulic mechanism.  When the rider squeezes the lever, the brake is activated, and when the rider pushes the lever inward, the shifting cable is pulled, which causes the derailleur to move the chain into a different gear.</p>
+                    <img id="brake-lever-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/brakelever.jpeg"> 
+                  </div>
+                </div>
+                <div id="brake/shift-lever2modal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>brake and shift levers</b> transmit the force applied by the rider through a mechanical or hydraulic mechanism.  When the rider squeezes the lever, the brake is activated, and when the rider pushes the lever inward, the shifting cable is pulled, which causes the derailleur to move the chain into a different gear.</p>
+                    <img id="brake-lever-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/brakelever.jpeg"> 
+                  </div>
+                </div>
+                <div id="chain-staymodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>chain stays</b> are part of the frame, and run parallel to the chain, connecting the bottom bracket shell to the rear dropouts.</p>
+                    <img id="chain-stays-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/chainstays.jpg"> 
+                  </div>
+                </div>
+
+                <div id="cablesmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>cables</b> are used to transmit mechanical force or energy by the movement of an inner cable, or hydraulic fluid, relative to a hollow outer housing.</p>
+                    <img id="cable-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/cable.jpg"> 
+                  </div>
+                </div>
+                <div id="saddlemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>saddle</b>, often called a bicycle seat, is one of five contact points on an upright boicycle.  The saddle is composed of three parts, a shell cover and rails.  The rails connect the saddle to the seatpost.</p>
+                    <img id="saddle-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/saddle.jpeg"> 
+                  </div>
+                </div>
+                <div id="rear-spokesmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">A <b>spoke</b> is a tensioned, adjustable metal wire radiating from the center of the wheel (the hub where the axle connects), connecting the hub with the rim.  The spoke tension keeps the wheel round, true, and in dish.</p>
+                    <img id="spoke-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/spoke.jpg"> 
+                  </div>
+                </div>
+                <div id="front-spokesmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">A <b>spoke</b> is a tensioned, adjustable metal wire radiating from the center of the wheel (the hub where the axle connects), connecting the hub with the rim.  The spoke tension keeps the wheel round, true, and in dish.</p>
+                    <img id="spoke-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/spoke.jpg"> 
+                  </div>
+                </div>
+                <div id="brake-calipermodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>brake caliper</b> is attached to the fork along with pads that squeese the rotors for braking. Disc brakes may be actuated mechanically by cable, or hydraulically.</p>
+                    <img id="brake-caliper-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/brakecaliper.jpg"> 
+                  </div>
+                </div>
+                <div id="quick-releasemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>quick release lever</b> allows for the wheel to be removed without any tools. The thru axle can be removed by turning the lever.</p>
+                  </div>
+                </div>
+                <div id="front-thru-axlemodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>thru axle</b> is a removable axle with a threaded end that is inserted through a hole in one fork leg, through the hub, and then screwed into the other fork leg.</p>
+                    <img id="thru-axle-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/thruaxle.jpeg"> 
+                  </div>
+                </div>
+                <div id="head-setmodal" class="modal">
+                  <div class="modal-content">
+                    <p id="modalText">The <b>headset</b> is the set of componenets that provides a rotatable interface between the fork and the head tube. A typical headset consists of two cups that are pressed into
+                    the top and bottom of the headtube.  Inside the two cups are bearings.</p>
+                    <img id="headset-image" src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/threadedheadset.png">
+                  </div>
+                </div>
+                <!-- Add more items as needed -->
+        </div> 
+  </div>
+</body>
+</html>

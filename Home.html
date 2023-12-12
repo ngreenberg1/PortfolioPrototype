@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta name="author" content="Naomi Greenberg and Ricardo Cordova" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Home.js"></script>
+
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Each section represents a different part of the page -->
+      <section class="one" id="home">
+        <header class="header">
+          <div class="header-container">
+            <div class="logo">
+              <h1><a href="#home">Naomi E. Greenberg</a></h1>
+              <h2>COMPUTER SCIENCE STUDENT - BIKE ENTHUSIAST</h2>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#about" onclick="closeMenu()">About Me</a>
+                <a href="#resume" onclick="closeMenu()">Resume</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="bikeinfo.html" target="_blank">Bicycle Image Map</a>
+                    <a href="#">Bicycle Recommender</a>
+                    <a href="#">Machine Learning Research</a>
+                  </div>
+                </div>
+                <div class="social-media-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="icon-link"><i class="far fa-envelope"></i></a>
+                </div>  
+                <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">&#9776;</a> 
+            </nav>
+          </div>
+        </header>
+        <main class="main-content">
+          <article>
+              <div class="profile-container">
+                <div class="image-container">
+                  <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/PortfolioNoBackground.png" alt="me" style="width: 80%;">
+                  <h1>Welcome to my profile page!</h1>
+                  <p>Scroll down to find out more about me</p>
+                </div>
+                <div class="additional-content">
+        
+                  <div class="education-list">
+                    <h2>Computer Science Student</h2>
+                    <ul>
+                        <li><a href=https://www.luc.edu>Loyola University Chicago</a></li>
+                        <li><a href=https://www.luc.edu/cs>Department of Computer Science</a></li>
+                        <!-- Add more items as needed -->
+                    </ul>
+                  </div>
+                 
+                  <div class="interests-list">
+                      <h2>Academic Interests</h2>
+                      <ul>
+                          <li>Machine Learning</li>
+                          <li>Software Development</li>
+                          <li>Philosophy of Artificial Intelligence</li>
+                          <li>Computer Ethics</li>
+                          <!-- Add more items as needed -->
+                      </ul>
+                  </div>
+                </div>
+              </div>
+          </article>
+        </main>
+        
+      </section>
+
+
+      <section class="two" id="about">
+        <header>
+          <div class="header-container">
+            <div class="logo">
+              <h1><a href="#home">Naomi E. Greenberg</a></h1>
+              <h2>COMPUTER SCIENCE STUDENT - BIKE ENTHUSIAST</h2>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#about" onclick="closeMenu()">About Me</a>
+                <a href="#resume" onclick="closeMenu()">Resume</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="bikeinfo.html" target="_blank">Bicycle Image Map</a>
+                    <a href="#">Bicycle Recommender</a>
+                    <a href="#">Machine Learning Research</a>
+                  </div>
+                </div>
+                <div class="social-media-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="icon-link"><i class="far fa-envelope"></i></a>
+                </div>  
+                <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">&#9776;</a>    
+            </nav>
+          </div>
+        </header>
+        <main>
+          <section class="about-me-content">
+            <h2>About Me</h2>
+            <p>
+              Hi, I'm Naomi! A passionate Computer Science student aspiring to merge technology and innovation.  
+              My fascination with computer science led me to explore various domains, with a particular interest in machine learning 
+              and its real-world applications, as well as anything to do with bikes. 
+            </p>
+            <b>
+              Beyond computers, I enjoy riding and fixing bikes, capturing moments through photography, and rock climbing. 
+            </b>
+            <h3>Skills Snapshots</h3>
+            <ul>
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>High-Performance Computing</li>
+            </ul>
+          </section>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage1.jpg" alt="Image 1">
+              <div class="text">Racing Cyclocross</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage2.jpg" alt="Image 2">
+              <div class="text">Deep Water Soloing, Lake Kincaid</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage3.jpg" alt="Image 3">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage4.jpg" alt="Image 4">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage5.jpg" alt="Image 5">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage6.jpg" alt="Image 6">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage7.jpg" alt="Image 7">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage8.jpg" alt="Image 8">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">9 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage9.jpg" alt="Image 9">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">10 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage10.jpg" alt="Image 10">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">11 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage11.jpg" alt="Image 11">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">12 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage12.jpg" alt="Image 12">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">13 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage13.jpg" alt="Image 13">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">14 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage14.jpg" alt="Image 14">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">15 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage15.jpg" alt="Image 15">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">16 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage16.jpg" alt="Image 16">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">17 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage17.jpg" alt="Image 17">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">18 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage18.jpg" alt="Image 18">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">19 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage19.jpg" alt="Image 19">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">20 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage20.jpg" alt="Image 20">
+              <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">21 / 21</div>
+              <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/galleryimage21.jpg" alt="Image 21">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+      
+        </main>
+      
+      </section>
+
+      <section class="three" id="resume">
+        <header>
+          <div class="header-container">
+            <div class="logo">
+              <h1><a href="#home">Naomi E. Greenberg</a></h1>
+              <h2>COMPUTER SCIENCE STUDENT - BIKE ENTHUSIAST</h2>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#about" onclick="closeMenu()">About Me</a>
+                <a href="#resume" onclick="closeMenu()">Resume</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="bikeinfo.html" target="_blank">Bicycle Image Map</a>
+                    <a href="#">Bicycle Recommender</a>
+                    <a href="#">Machine Learning Research</a>
+                  </div>
+                </div>
+                <div class="social-media-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="icon-link"><i class="far fa-envelope"></i></a>
+                </div>  
+                <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">&#9776;</a>    
+            </nav>
+          </div>
+        </header>
+        <main>
+          <div class="resume-container">
+            <embed src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/generic_resume.pdf" type="application/pdf"/>
+          </div>
+        </main>
+        <a href="#projects" class="arrow-link">
+          <div class="arrows-body">
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <div class="arrow"></div>
+            <p class="scroll-text">Scroll to Projects</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="four" id="projects">
+        <header>
+          <div class="header-container">
+            <div class="logo">
+              <h1><a href="#home">Naomi E. Greenberg</a></h1>
+              <h2>COMPUTER SCIENCE STUDENT - BIKE ENTUHSIAST</h2>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#about" onclick="closeMenu()">About Me</a>
+                <a href="#resume" onclick="closeMenu()">Resume</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="bikeinfo.html" target="_blank">Bicycle Image Map</a>
+                    <a href="#">Bicycle Recommender</a>
+                    <a href="#">Machine Learning Research</a>
+                  </div>
+                </div>
+                <div class="social-media-icons">
+                  <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                  <a href="#" class="icon-link"><i class="far fa-envelope"></i></a>
+                </div>  
+                <a href="javascript:void(0)" class="icon" onclick="toggleMenu()">&#9776;</a>    
+            </nav>
+          </div>
+        </header>
+        <main class="project-container">
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Bike Image Map</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/ngreenberg1/PortfolioPrototype" class="project-button" target="_blank">
+                <i class="fab fa-github"> Github</i> 
+              </a>
+              <a href="file:///Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/bikeinfo.html" class="project-button" target="_blank">View My Image Map</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-image">
+            <img src="/Users/naomigreenberg/Workspace/COMP424/PortfolioPrototype/Images/high-qualitybike.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            </div>
+            <div class="project-buttons">
+              <a href="link1" class="project-button">Button 1</a>
+              <a href="link2" class="project-button">Button 2</a>
+            </div>
+          </div>
+          <!-- Add more items as needed -->
+        </main>
+      </section>
+    </div>
+    
+    
+    
+  
+
+      
+  </body>
+</html>
